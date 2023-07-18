@@ -1,0 +1,660 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Tue Jul 18 2023 01:23:36 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="64b07fc0d687ebf68929c02f" data-wf-site="64b07fc0d687ebf68929bfd5">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta content="" name="description">
+  <meta content="" property="og:title">
+  <meta content="" property="og:description">
+  <meta content="" property="og:image">
+  <meta content="" property="twitter:title">
+  <meta content="" property="twitter:description">
+  <meta content="" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/mha-blog-section.webflow.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.jpg" rel="apple-touch-icon">
+  <style>
+* {
+	pointer-events: none;
+}
+body:not(.page--loaded) .nav {
+	opacity: 0;
+}
+body:not(.page--loaded) .content {
+	opacity: 0;
+}
+</style>
+  <script>
+  document.documentElement.setAttribute('prefix','og: https://ogp.me/ns#')
+</script>
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="349">
+  <script>
+  window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+      window.location.reload();
+    } else {
+      function s(t){return y(t)||T(t)||f(t)||m()}function m(){throw new TypeError(`Invalid attempt to spread non-iterable instance.
+In order to be iterable, non-array objects must have a [Symbol.iterator]() method.`)}function f(t,e){if(t){if(typeof t=="string")return u(t,e);var r=Object.prototype.toString.call(t).slice(8,-1);if(r==="Object"&&t.constructor&&(r=t.constructor.name),r==="Map"||r==="Set")return Array.from(t);if(r==="Arguments"||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r))return u(t,e)}}function T(t){if(typeof Symbol<"u"&&t[Symbol.iterator]!=null||t["@@iterator"]!=null)return Array.from(t)}function y(t){if(Array.isArray(t))return u(t)}function u(t,e){(e==null||e>t.length)&&(e=t.length);for(var r=0,a=new Array(e);r<e;r++)a[r]=t[r];return a}var L="blog-website",A="cdn.digitalbutlers.me",I="projects",l="https://".concat(A,"/").concat(I,"/").concat(L),S={DEVELOPMENT:"development",PRODUCTION:"production",WEBFLOW:"webflow"},b={ROOT:"src",BUILD:"dist",COMPONENTS:"components",ASSETS:"assets",SCRIPTS:"scripts",STYLES:"styles",IMAGES:"images",FONTS:"fonts",WEBFLOW:"webflow"},d={BUILD:{SCRIPTS:"js",STYLES:"css"}},E={COMPONENT_ROOT:"index",GLOBAL:"main",WEBFLOW:"webflow"},O={COMPONENT_ID:"data-component-id"},h={FILES_LOAD:"customFilesLoad"},p=window.location.origin.includes("webflow.io")?S.DEVELOPMENT:S.PRODUCTION,P=function(){var e=["".concat(l,"/").concat(p,"/").concat(E.GLOBAL,".").concat(d.BUILD.SCRIPTS)];return document.querySelectorAll("[".concat(O.COMPONENT_ID,"]")).forEach(function(r){var a=r.getAttribute(O.COMPONENT_ID);e.push("".concat(l,"/").concat(p,"/").concat(b.COMPONENTS,"/").concat(a,"/").concat(E.COMPONENT_ROOT,".").concat(d.BUILD.SCRIPTS))}),s(new Set(e))},N=function(){return["".concat(l,"/").concat(p,"/").concat(E.GLOBAL,".").concat(d.BUILD.STYLES)]},C=function(){var e=new Event(h.FILES_LOAD);window.dispatchEvent(e)},w=function(){console.error("Custom files failed to load. Check errors above.")},D=function(e){var r=e.parent,a=r===void 0?document.body:r,c=e.path;return new Promise(function(o,i){var n=document.createElement("script");n.addEventListener("load",o),n.addEventListener("error",i),n.setAttribute("type","module"),n.setAttribute("src",c),a.append(n)})},M=function(e){var r=e.parent,a=r===void 0?document.head:r,c=e.path;return new Promise(function(o,i){var n=document.createElement("link");n.addEventListener("load",o),n.addEventListener("error",i),n.setAttribute("rel","stylesheet"),n.setAttribute("href",c),a.append(n)})},v=function(){var e=P(),r=N(),a=e.map(function(o){return D({path:o})}),c=r.map(function(o){return M({path:o})});Promise.all([].concat(s(a),s(c))).then(C).catch(w)};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",v):v();
+    }
+});
+</script>
+</head>
+<body class="body body--topics-bg">
+  <div class="settings">
+    <div>
+      <div class="global-variables w-embed">
+        <style>
+:root {
+  --default-transition: 0.3s;
+  --long-transition: 1.2s;
+  --transition-timing-slow-end: cubic-bezier(0.670, 0.200, 0.150, 0.925);
+	--scrollbar-width: 6px;
+	--scrollbar-height: 6px;
+	--navigation-grid-template-rows: 1fr 1fr;
+	--navigation-grid-template-columns: 1fr 1fr;
+}
+</style>
+      </div>
+      <div class="js-all-pages w-embed w-script">
+        <script>
+const PAGES = {
+	/* this is home page*/
+	'': { 
+  	color: 'hsla(0, 0%, 0%, 1)',
+    backgroundColor: 'hsla(0, 0%, 100%, 1)',
+  },
+  'home-2': { 
+  	color: 'hsla(240, 5%, 90%, 1)',
+    backgroundColor: 'hsla(217, 44%, 45%, 1)',
+  },
+  'about': { 
+  	color: 'hsla(0, 0%, 100%, 1)',
+    backgroundColor: 'hsla(0, 0%, 0%, 1)',
+  },
+  'about-2': { 
+  	color: 'hsla(60, 25%, 98%, 1)',
+    backgroundColor: 'hsla(84, 30%, 45%, 1)',
+  },
+  'contact': { 
+  	color: 'hsla(0, 0%, 100%, 1)',
+    backgroundColor: 'hsla(0, 79%, 45%, 1)', // Changed this to red
+  },
+  'contact-2': { 
+  	color: 'hsla(168, 22%, 95%, 1);',
+    backgroundColor: 'hsla(203, 74%, 72%, 1)',
+  },
+  'topics':{
+    color: 'hsla(0, 0%, 100%, 1)',
+    backgroundColor: 'hsla(0, 0%, 0%, 1)',
+  },
+  'search':{
+    color: 'hsla(0, 0%, 100%, 1)',
+    backgroundColor: 'hsla(0, 0%, 0%, 1)',
+  }
+}
+</script>
+      </div>
+      <div class="colors w-embed">
+        <style>
+/*--COLORS-START--*/
+.body {
+	background-color: var(--color-bg);
+	color: var(--color-primary);
+}
+/*------------------------------*/
+.network__link,
+.nav__link,
+.nav__loupe,
+.nav__logo,
+.italic,
+.articles__date,
+.main-article__link,
+.articles__link,
+.subscription__result-link,
+.pagination-wf__button,
+.input,
+.button-submit,
+.link {
+	color: var(--color-primary);
+}
+.network__link:hover,
+.w-richtext a,
+.text-light a,
+.nav__loupe:hover,
+.nav__logo:hover,
+.button-submit:hover,
+.link:hover,
+.subscription__result-link:hover .subscription__result-heading{
+color:var(--color-accent);
+}
+.network__link.js--disabled,
+.w-richtext a.js--disabled,
+.text-light a.js--disabled,
+.nav__loupe.js--disabled,
+.nav__logo.js--disabled,
+.button-submit.js--disabled,
+.link.js--disabled,
+.subscription__result-link.js--disabled .subscription__result-heading,
+.main-article__link.js--disabled,
+.articles__link.js--disabled{
+color:var(--color-primary-light);
+}
+.input::placeholder,
+.articles__link .articles__description{
+	color: var(--color-primary-light);
+}
+.pagination-wf__button,
+.nav__link {
+	background-color: var(--color-bg);
+}
+.articles-slider__button,
+.form-message {
+	color: var(--color-bg);
+	background-color: var(--color-primary);
+}
+.dividing-line,
+.nav::before,
+.nav__item .nav__link::before,
+.nav__item .nav__link::after,
+.nav__item:not(:last-child)::after,
+.burger-sidebar__line,
+.nav__link::after,
+.horizontal-line {
+	background-color: var(--color-primary);
+}
+.dividing-line.dividing-line--light {
+	background-color: var(--color-primary-light);
+}
+.pagination-wf__button,
+.topics-block__toggle.topics-block__link {
+	border-color: var(--color-topics-bg);
+}
+.articles-slider__button:hover,
+.pagination-wf__button:hover,
+.topics-block__toggle.topics-block__link:hover,
+.burger-sidebar:hover .burger-sidebar__line {
+	background-color: var(--color-accent);
+}
+.topics__preloader,
+.topics-block,
+.topics-block__link,
+.topics-block__toggle.topics-block__link,
+.topics-block__top,
+.topics-block__bottom,
+.topics-block__button:hover {
+	background-color: var(--color-topics-bg);
+}
+.topic__name::before,
+.topics-block__button,
+.topics-block__tag:hover,
+.topics-block__tag.js--active,
+.topics-block__burger-line,
+.topics-block__more-line {
+	background-color: var(--color-topics-primary);
+}
+.topics-block__button,
+.topics-block__tag:hover,
+.topics-block__tag.js--active {
+	color: var(--color-topics-bg);
+}
+.topics__preloader,
+.topics-block__link,
+.topics-block__title,
+.topics-block__toggle,
+.topic__link,
+.topics-block__label,
+.topics-block__tag,
+.topics-block__button:hover {
+	color: var(--color-topics-primary);
+}
+.text-light,
+.w-richtext p,
+.topic__details,
+.topics-block__label:hover,
+.link.topic__link:hover,
+.topics-block__toggle:not(.topics-block__link):hover {
+	color: var(--color-topics-primary-light);
+}
+.topics-block__toggle:hover .topics-block__burger-line {
+	background-color: var(--color-topics-primary-light);
+}
+.topic__tags {
+	color: var(--color-topics-primary-lighter);
+}
+.topic,
+.topics-block__tag,
+.topics-block__button {
+	border-color: var(--color-topics-primary);
+}
+.articles__image-wrapper,
+.articles-slider__image-wrapper,
+.w-richtext-figure-type-image div,
+.article-hero__image-wrapper,
+.image-wrapper {
+	border-color: var(--color-primary);
+}
+/*--COLORS-END--*/
+</style>
+      </div>
+      <div class="starting-styles w-embed">
+        <style>
+/*--STARTING-STYLES-START--*/
+/*---!!!!!!!!---*/
+/* You need to insert it into the "settings" component */
+/* Use css only */
+/*---!!!!!!!!---*/
+.body::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+html {
+	scrollbar-width: none;
+}
+@media screen and (min-width: 1440px) {
+	body:not(.page--loaded) .nav__item {
+		transition: none;
+	}
+	body:not(.page--loaded) .topics-block {
+		margin-right: -3.75rem;
+	}
+	body:not(.page--loaded) .topics-block__link {
+		right: -3.75rem;
+	}
+}
+@media screen and (min-width: 1920px) {
+	body:not(.page--loaded) .topics-block {
+		margin-right: -30rem;
+    flex: 0 1;
+	}
+}
+@media screen and (max-width: 1339px) {
+	body:not(.page--loaded) .nav__item--main {
+		margin-top: -3.75rem;
+	}
+	body:not(.page--loaded) .topics-block__link {
+		right: -6rem;
+	}
+}
+/*--STARTING-STYLES-END--*/
+</style>
+      </div>
+      <div class="page-loaded w-embed">
+        <style>
+  /* ----- PAGE LOADED START ----- */
+  .page--loaded {
+    transition-property: background-color, color;
+    transition-duration: var(--long-transition);
+    transition-delay: var(--long-transition);
+  }
+  .page--loaded * {
+    pointer-events: visible;
+  }
+  .page--loaded .header {
+    pointer-events: none;
+  }
+  /* ----- PAGE LOADED FINISH ----- */
+</style>
+      </div>
+    </div>
+    <div class="main-css w-embed">
+      <link rel="stylesheet" href="https://cdn.digitalbutlers.me/projects/blog-website/development/main.css">
+    </div>
+  </div>
+  <div class="variables w-embed">
+    <style>
+:root {
+  /* Nav Colors START*/
+  --color-bg: hsla(0, 0%, 0%, 1);
+  --color-bg-transparent: hsla(0, 0%, 0%, 0);
+  --color-primary: hsla(0, 0%, 100%, 1);
+  --color-primary-light: hsla(0, 0%, 50%, 1);
+  --color-primary-lighter: hsla(0, 0%, 75%, 1);
+  --color-accent: hsla(37, 100%, 52%, 1);
+  /* Nav Colors FINISH*/
+  /* Topics Colors START*/
+  --color-topics-bg: hsla(0, 0%, 100%, 1);
+  --color-topics-bg-linear: hsla(0, 0%, 100%, 0);
+  --color-topics-primary: hsla(0, 0%, 0%, 1);
+  --color-topics-primary-light: hsla(0, 0%, 50%, 1);
+  --color-topics-primary-lighter: hsla(0, 0%, 75%, 1);
+  /* Topics Colors FINISH*/
+}
+</style>
+  </div>
+  <header class="header">
+    <nav data-component-id="navigation" class="nav">
+      <div class="nav__item nav__item--main">
+        <div tabindex="0" role="button" class="nav__link nav__link--disabled">
+          <a data-name="nav-link-logo" href="index.html" class="logo nav__logo w-inline-block">
+            <div class="logo__icon w-embed"><svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="14" fill="currentcolor"></circle>
+              </svg></div>
+          </a>
+          <div aria-label="open sidebar" role="button" tabindex="0" class="burger-sidebar">
+            <div class="burger-sidebar__line burger-line--top"></div>
+            <div class="burger-sidebar__line burger-line--center"></div>
+            <div class="burger-sidebar__line burger-line--bottom"></div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item">
+        <a href="contact.html" class="nav__link w-inline-block">
+          <div class="nav__link-text">CONTACT</div>
+        </a>
+      </div>
+      <div class="nav__item">
+        <a href="about.html" class="nav__link w-inline-block">
+          <div class="nav__link-text">ABOUT</div>
+        </a>
+      </div>
+      <div class="nav__item">
+        <a href="index.html" class="nav__link w-inline-block">
+          <div class="nav__link-text">home</div>
+        </a>
+      </div>
+    </nav>
+    <div data-name="topics" data-component-id="topic" class="topics-block">
+      <div tabindex="0" aria-label="show the list of articles" role="button" class="topics-block__toggle topics-block__link">
+        <div aria-label="hide the list of articles" role="button" tabindex="0" class="topics-block__more-burger">
+          <div class="topics-block__more-line burger-line--top"></div>
+          <div class="topics-block__more-line burger-line--center"></div>
+          <div class="topics-block__more-line burger-line--bottom"></div>
+        </div>
+        <div class="topics-block__link-text">top topics</div>
+      </div>
+      <header class="topics-block__top">
+        <div class="topics-block__first-string">
+          <h3 class="topics-block__title">TOP TOPICS</h3>
+          <div class="topics-block__toggle">
+            <div class="topics-block__toggle-text">View all stories</div>
+            <div aria-label="hide the list of articles" role="button" tabindex="0" class="topics-block__burger">
+              <div class="topics-block__burger-line burger-line--top"></div>
+              <div class="topics-block__burger-line burger-line--center"></div>
+              <div class="topics-block__burger-line burger-line--bottom"></div>
+            </div>
+          </div>
+        </div>
+        <div class="topics-block__tags-wrapper designer-scroll">
+          <div class="topics-block__tags">
+            <div data-topic-filter-button="main-button" role="button" tabindex="0" data-name="topic-filter-button" class="topics-block__tag js--active">
+              <div>View all</div>
+            </div>
+            <div class="topics-block__custom-tags-wrp w-dyn-list">
+              <div role="list" class="topics-block__custom-tags w-dyn-items">
+                <div role="listitem" class="topics-block__tag-wrapper w-dyn-item">
+                  <div data-name="topic-filter-button" role="button" tabindex="0" class="topics-block__tag">
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="hidden w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="topics-wrapper">
+        <div class="topics__preloader">
+          <div class="preloader-wrapper w-embed"><svg viewbox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <symbol id="s--circle">
+                <circle r="10" cx="20" cy="20"></circle>
+              </symbol>
+              <g class="g-circles g-circles--v1">
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+                <g class="g--circle">
+                  <use xlink:href="#s--circle" class="u--circle"></use>
+                </g>
+              </g>
+            </svg></div>
+        </div>
+        <div class="topics w-dyn-list">
+          <div role="list" class="topics__list w-dyn-items">
+            <div da="" role="listitem" class="topic js--active w-dyn-item">
+              <div class="topic__info">
+                <a href="#" class="topic__link-image w-inline-block"><img src="" loading="eager" alt="" class="topic__image"></a>
+                <div class="topic__content">
+                  <div class="topic__top">
+                    <div class="topic__details">
+                      <div class="topic__date"></div>
+                      <div class="topic__author"></div>
+                    </div>
+                    <a href="#" class="link topic__link w-inline-block">
+                      <h4 class="topic__name trim-three-string"></h4>
+                    </a>
+                  </div>
+                  <div class="topic__tags">
+                    <p class="topic__tags-label">Tags:</p>
+                    <div data-name="topic-filter-button" role="button" tabindex="0" class="topic__tag"></div>
+                    <div data-name="topic-filter-button" role="button" tabindex="0" class="topic__tag"></div>
+                    <div data-name="topic-filter-button" role="button" tabindex="0" class="topic__tag"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hidden w-dyn-empty">
+            <div>No items found.</div>
+          </div>
+        </div>
+      </div>
+      <footer class="topics-block__bottom">
+        <div tabindex="0" role="button" class="topics-block__label topic__scroll">Scroll down</div>
+        <div aria-label="scroll through the list of articles to the bottom" role="button" tabindex="0" class="topics-block__button topic__scroll">
+          <div class="topics-block__arrow w-embed"><svg width="24" height="24" viewbox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.29289 23.7071C7.68342 24.0976 8.31658 24.0976
+    	8.70711 23.7071L15.0711 17.3431C15.4616 16.9526
+      15.4616 16.3195 15.0711 15.9289C14.6805 15.5384
+      14.0474 15.5384 13.6569 15.9289L8 21.5858L2.34315
+      15.9289C1.95262 15.5384 1.31946 15.5384 0.928932
+      15.9289C0.538407 16.3195 0.538407 16.9526 0.928932
+      17.3431L7.29289 23.7071ZM7 -3.87035e-08L7 23L9
+      23L9 3.87035e-08L7 -3.87035e-08Z" fill="currentcolor"></path>
+            </svg></div>
+        </div>
+      </footer>
+    </div>
+  </header>
+  <div class="content">
+    <main class="main">
+      <section class="section article-hero__section">
+        <div class="container article-hero__container">
+          <div class="article-hero__content-wrapper">
+            <p class="heading-s article-hero__date"></p>
+            <div class="heading-wrapper">
+              <div class="logo__icon logo-heading w-embed"><svg viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14" cy="14" r="14" fill="currentcolor"></circle>
+                </svg></div>
+              <div aria-level="1" role="heading" class="heading-xxl heading--main">
+                <div class="heading-span heading-span--size"></div>
+              </div>
+            </div>
+            <p class="article-hero__description"></p>
+            <div class="article-hero__info">
+              <div class="article-hero__autor text-light"></div>
+              <div class="article-date">
+                <div class="article-hero__autor text-light"></div>
+                <div class="article-hero__autor text-light">Th</div>
+                <div class="article-hero__autor text-light article-hero__autor--ml"></div>
+                <div class="article-hero__autor text-light">,</div>
+                <div class="article-hero__autor text-light article-hero__autor--ml"></div>
+              </div>
+            </div>
+            <div class="article-hero__image-wrapper"><img src="" loading="lazy" alt="" class="main-article__image"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section article-content__section">
+        <div class="container article-content__container">
+          <div class="article__rich-text hidden w-richtext">
+            <h2>What’s a Rich Text element?</h2>
+            <p>The rich text element allows you to create and format headings, paragraphs, blockquotes, images, and video all in one place instead of having to add and format them individually. Just double-click and easily create content.</p>
+            <h4>Static and dynamic content editing</h4>
+            <p>A rich text element can be used with static or dynamic content. For static content, just drop it into any page and begin editing. For dynamic content, add a rich text field to any collection and then connect a rich text element to that field in the settings panel. Voila!</p>
+            <h4>How to customize formatting for each rich text</h4>
+            <p>Headings, paragraphs, blockquotes, figures, images, and figure captions can all be styled after a class is added to the rich text element using the &quot;When inside of&quot; nested selector system.</p>
+          </div>
+          <div class="article__rich-text w-richtext"></div>
+        </div>
+      </section>
+      <section data-component-id="share-page" class="section share__section">
+        <div class="container share__container">
+          <div class="share__content">
+            <h2 class="heading-s">share</h2>
+            <ul role="list" class="share__networks-list">
+              <li class="share__networks-item">
+                <a data-network-name="linked" data-name="share-page" href="#" target="_blank" class="network__link w-inline-block">
+                  <p class="invisible-text">Linkedin</p>
+                  <div class="network__icon-wrapper big-size w-embed"><svg width="100%" height="100%" viewbox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M2.47327e-07 1.67091C2.47327e-07 1.22776 0.176042 
+0.802756 0.489398 0.4894C0.802754 0.176044 1.22776 2.22756e-06 1.67091 2.22756e-06H18.3273C18.5469 
+-0.000356456 18.7644 0.0426049 18.9674 0.126426C19.1704 0.210248 19.3549 0.333284 19.5102 0.48849C19.6656 
+0.643696 19.7888 0.828023 19.8729 1.03092C19.9569 1.23382 20.0001 1.4513 20 1.67091V18.3273C20.0002 18.5469 
+19.9572 18.7645 19.8732 18.9675C19.7893 19.1705 19.6662 19.3549 19.5109 19.5103C19.3556 19.6656 19.1713 
+19.7889 18.9683 19.8729C18.7654 19.9569 18.5478 20.0001 18.3282 20H1.67091C1.45141 20 1.23405 19.9568 
+1.03127 19.8727C0.828487 19.7887 0.644247 19.6655 0.489077 19.5103C0.333906 19.355 0.210847 19.1707 
+0.12693 18.9679C0.0430121 18.7651 -0.000119178 18.5477 2.47327e-07 18.3282V1.67091ZM7.91636
+7.62546H10.6245V8.98546C11.0155 8.20364 12.0155 7.5 13.5182 7.5C16.3991 7.5 17.0818 9.05727 17.0818 11.9145V17.2073H14.1664V12.5655C14.1664 10.9382 13.7755 10.02 12.7827 10.02C11.4055 10.02 10.8327 11.01 10.8327 12.5655V17.2073H7.91636V7.62546ZM2.91636 17.0827H5.83273V7.5H2.91636V17.0827ZM6.25 4.37455C6.2555 4.62425 6.21107 4.87254 6.11931 5.10483C6.02755 5.33713 5.89032 5.54876 5.71567 5.7273C5.54101 
+5.90585 5.33245 6.0477 5.10223 6.14455C4.87201 6.2414 4.62476 6.29129 4.375 6.29129C4.12524 6.29129 3.87799 
+6.2414 3.64777 6.14455C3.41755 6.0477 3.20899 5.90585 3.03434 5.7273C2.85968 5.54876 2.72245 5.33713 2.63069 
+5.10483C2.53893 4.87254 2.4945 4.62425 2.5 4.37455C2.51079 3.88441 2.71308 3.41799 3.06353 3.07517C3.41399 
+2.73235 3.88475 2.54038 4.375 2.54038C4.86525 2.54038 5.33601 2.73235 5.68647 3.07517C6.03692 3.41799 
+6.23921 3.88441 6.25 4.37455Z" fill="currentColor"></path>
+                    </svg></div>
+                </a>
+              </li>
+              <li class="share__networks-item">
+                <a data-name="share-page" data-network-name="fb" href="#" target="_blank" class="network__link w-inline-block">
+                  <p class="invisible-text">facebook<br>‍</p>
+                  <div class="network__icon-wrapper big-size w-embed"><svg width="100%" height="100%" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.5556 0H3.00005C1.77783 0 0.777832 1 0.777832 2.22222V17.7778C0.777832 19.0011 1.77783 20 3.00005 20H10.7778V12.2222H8.55561V9.47222H10.7778V7.19444C10.7778 4.79 12.1245 3.10111 14.9623 3.10111L16.9656 3.10333V5.99778H15.6356C14.5312 5.99778 14.1112 6.82667 14.1112 7.59556V9.47333H16.9645L16.3334 12.2222H14.1112V20H18.5556C19.7778 20 20.7778 19.0011 20.7778 17.7778V2.22222C20.7778 1 19.7778 0 18.5556 0Z" fill="currentColor"></path>
+                    </svg></div>
+                </a>
+              </li>
+              <li class="share__networks-item">
+                <a data-name="share-page" data-network-name="twitter" href="#" target="_blank" class="network__link w-inline-block">
+                  <p class="invisible-text">twitter</p>
+                  <div class="network__icon-wrapper big-size w-embed"><svg width="100%" height="100%" viewbox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M18.4127 0H2.6984C1.51536 0 0.555542 0.959821 0.555542 2.14286V17.8571C0.555542 19.0402 1.51536 20 2.6984 20H18.4127C19.5957 20 20.5555 19.0402 20.5555 17.8571V2.14286C20.5555 0.959821 19.5957 0 18.4127 0ZM16.2296 7.08929C16.2386 7.21429 16.2386 7.34375 16.2386 7.46875C16.2386 11.3393 13.2921 15.7991 7.90822 15.7991C6.24751 15.7991 4.70733 15.317 3.41268 14.4866C3.64929 14.5134 3.87697 14.5223 4.11804 14.5223C5.48858 14.5223 6.74751 14.058 7.75197 13.2723C6.46626 13.2455 5.3859 12.4018 5.01536 11.2411C5.46626 11.308 5.87251 11.308 6.33679 11.1875C4.99751 10.9152 3.99304 9.73661 3.99304 8.3125V8.27679C4.38143 8.49554 4.83679 8.62946 5.31447 8.64732C4.91288 8.38019 4.58366 8.0178 4.3562 7.59248C4.12874 7.16716 4.01011 6.69214 4.0109 6.20982C4.0109 5.66518 4.15376 5.16518 4.40822 4.73214C5.85019 6.50893 8.01536 7.66964 10.4439 7.79464C10.0288 5.80804 11.5154 4.19643 13.3011 4.19643C14.1448 4.19643 14.9038 4.54911 15.4395 5.12054C16.1002 4.99554 16.7341 4.75 17.2966 4.41518C17.0779 5.09375 16.618 5.66518 16.0109 6.02679C16.6002 5.96429 17.1716 5.79911 17.6984 5.57143C17.3011 6.15625 16.8011 6.67411 16.2296 7.08929Z" fill="currentColor"></path>
+                    </svg></div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section data-component-id="recent-articles-slider" class="section articles-slider__section">
+        <div class="diving-line-wrapper horizontal">
+          <div class="container">
+            <div class="dividing-line footer__dividing-line"></div>
+          </div>
+        </div>
+        <div class="container articles-slider__container">
+          <div class="articles-slider__header">
+            <h1 class="heading-xl articles-slider__heading">Articles related to Clash of the Ages</h1>
+            <div class="articles-slider__buttons">
+              <div tabindex="0" role="button" class="articles-slider__button swiper-button-prev w-embed"><svg width="27" height="16" viewbox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.06097 8.69685C0.67045 8.30633 0.67045 7.67316 1.06097 7.28264L7.42494 0.918678C7.81546 0.528154 8.44863 0.528154 8.83915 0.918678C9.22967 1.3092 9.22967 1.94237 8.83915 2.33289L3.18229 7.98975L8.83915 13.6466C9.22967 14.0371 9.22967 14.6703 8.83915 15.0608C8.44863 15.4513 7.81546 15.4513 7.42494 15.0608L1.06097 8.69685ZM26.2529 8.98975L1.76808 8.98975L1.76808 6.98975L26.2529 6.98975L26.2529 8.98975Z" fill="currentColor"></path>
+                </svg></div>
+              <div tabindex="0" role="button" class="articles-slider__button swiper-button-next w-embed"><svg width="27" height="16" viewbox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(180deg)">
+                  <path d="M1.06097 8.69685C0.67045 8.30633 0.67045 7.67316 1.06097 7.28264L7.42494 0.918678C7.81546 0.528154 8.44863 0.528154 8.83915 0.918678C9.22967 1.3092 9.22967 1.94237 8.83915 2.33289L3.18229 7.98975L8.83915 13.6466C9.22967 14.0371 9.22967 14.6703 8.83915 15.0608C8.44863 15.4513 7.81546 15.4513 7.42494 15.0608L1.06097 8.69685ZM26.2529 8.98975L1.76808 8.98975L1.76808 6.98975L26.2529 6.98975L26.2529 8.98975Z" fill="currentColor"></path>
+                </svg></div>
+            </div>
+          </div>
+          <div class="articles-slider__main">
+            <div class="articles-slider__collection swiper-container w-dyn-list">
+              <div role="list" class="articles-slider__list swiper-wrapper w-dyn-items">
+                <div role="listitem" class="articles-slider__item swiper-slide w-dyn-item">
+                  <a href="#" class="articles__link articles-slider__link w-inline-block">
+                    <div class="articles-slider__image-wrapper"><img src="" loading="lazy" alt="" class="articles-slider__image"></div>
+                    <div class="articles__text-content">
+                      <p class="articles__date articles-slider__date"></p>
+                      <div class="articles__separator">
+                        <div class="dividing-line dividing-line--horizontal"></div>
+                      </div>
+                      <div class="articles__heading-wrapper">
+                        <div class="logo__icon logo--articles-heading w-embed"><svg viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="14" cy="14" r="14" fill="currentcolor"></circle>
+                          </svg></div>
+                        <h2 class="heading-m articles__heading"></h2>
+                        <p class="articles__description articles-slider__description"></p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="w-dyn-empty">
+                <div>No items found.</div>
+              </div>
+            </div>
+            <div class="articles-slider__pagination swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="diving-line-wrapper horizontal">
+        <div class="container">
+          <div class="dividing-line footer__dividing-line"></div>
+        </div>
+      </div>
+      <div class="container footer__container">
+        <a href="index.html" class="logo nav__logo footer__logo w-inline-block">
+          <div class="logo__icon w-embed"><svg width="28" height="28" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="14" cy="14" r="14" fill="currentcolor"></circle>
+            </svg></div>
+        </a>
+        <div class="footer__links-wrapper">
+          <a href="index.html" class="link">Home</a>
+          <a href="about.html" class="link">A‍bout</a>
+          <a href="contact.html" class="link">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=64b07fc0d687ebf68929bfd5" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+</body>
+</html>
